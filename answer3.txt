@@ -1,4 +1,4 @@
-POST /~acc.besmera2/simulators/FormData/echo.php?username=guilbaudc2&winthropId=30274787&emailAddress=guilbaudc2%40mailbox.edu HTTP/1.1
+POST /~acc.besmera2/simulators/FormData/echo.php?username=guilbaudc2&winthropId=30274787&emailAddress=guilbaudc2%40mailbox.winthrop.edu HTTP/1.1
 Host: infd.birdnest.org
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 112
