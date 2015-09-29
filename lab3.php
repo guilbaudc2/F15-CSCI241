@@ -2,7 +2,6 @@
 <head>
 <title>Lab 3</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width-device-width, initial-scale=1.0">
 <!--[if lt IE9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -23,23 +22,23 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 		    <th>Quantity</th>
 		  </tr>
 		  <tr>
- 				<td><label>Invoice Item 1: <input type="text" name="invoiceItem1" value="DVD" readonly></label></td> 
-				<td><label>Price: <input type="text" name="invoiceItem1Price" value="19.99" readonly></label></td>
+ 				<td><label>Invoice Item 1: <input type="text" name="invoiceItem1"></label></td> 
+				<td><label>Price: <input type="text" name="invoiceItem1Price"></label></td>
 				<td><input type="number" name="quantityItem1" min="0" placeholder="0"></td>
 		  </tr>
 		  <tr>
-				<td><label>Invoice Item 2: <input type="text" name="invoiceItem2" value="TV" readonly></label></td>
-				<td><label>Price: <input type="text" name="invoiceItem2Price" value="249.99" readonly></label></td>
+				<td><label>Invoice Item 2: <input type="text" name="invoiceItem2"></label></td>
+				<td><label>Price: <input type="text" name="invoiceItem2Price"></label></td>
 				<td><input type="number" name="quantityItem2" min="0" placeholder="0"></td>
 		  </tr>
 		  <tr>
-				<td><label>Invoice Item 3: <input type="text" name="invoiceItem3" value="Remote" readonly></label></td> 
-				<td><label>Price: <input type="text" name="invoiceItem3Price" value="6.99" readonly></label></td>
+				<td><label>Invoice Item 3: <input type="text" name="invoiceItem3"></label></td> 
+				<td><label>Price: <input type="text" name="invoiceItem3Price"></label></td>
 				<td><input type="number" name="quantityItem3" min="0" placeholder="0"></td>
 		  </tr>
  		  <tr>
-			<td><label>Invoice Item 4: <input type="text" name="invoiceItem4" value="HDMI Cable" readonly></label></td>
-				<td><label>Price: <input type="text" name="invoiceItem4Price" value="12.99" readonly></label></td>
+			<td><label>Invoice Item 4: <input type="text" name="invoiceItem4"></label></td>
+				<td><label>Price: <input type="text" name="invoiceItem4Price"></label></td>
 				<td><input type="number" name="quantityItem4" min="0" placeholder="0"></td>
  		  </tr>
 			
@@ -64,17 +63,9 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 		
 	$subTotal = $totalItem1Price + $totalItem2Price + $totalItem3Price + $totalItem4Price;
 	$appliedTax = $subTotal * $tax;
+	$appliedTax = isset($_POST["applyTax"]) ?  $appliedTax : 0;
 	$totalCost = $subTotal + $appliedTax;
 
-	
-		if($_POST["quantityItem1"] == 0)
-			$_POST["quantityItem1"] = 0;
-		if($_POST["quantityItem2"] == 0)
-			$_POST["quantityItem2"] = 0;
-		if($_POST["quantityItem3"] == 0)
-			$_POST["quantityItem3"] = 0;
-		if($_POST["quantityItem4"] == 0)
-			$_POST["quantityItem4"] = 0;
 ?>
 			 <table>
 		  <tr>
@@ -112,16 +103,8 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 			<br>
 <?php	
 	echo "Subtotal: " . $subTotal . "<br>";
-	if(isset($_POST["applyTax"]) == true)
-		{
-			echo "Tax: " . $appliedTax . "<br>";
-			echo "Total: " . $totalCost;
-		}
-	else 
-		{
-			$totalCost = $subTotal;
-			echo "Total: " . $totalCost;
-		}
+	echo "Tax: " . $appliedTax . "<br>";
+	echo "Total: " . $totalCost;
 }
 ?>
 
