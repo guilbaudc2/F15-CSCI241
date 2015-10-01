@@ -1,13 +1,30 @@
-<?php
+<!DOCTYPE html>
+<head></head>
 
-$start = 1;
-$end = 100;
+<body>
+
+<?php
+$start = -5;
+$end = 5;
+?>
+<table>
+<?php
 for($r = $start; $r <= $end; $r++)
 {
-    for($c = $start; $c <= $end; $c++ )
-    {
-        echo $r*$c;
-    }
-    echo "<br>";
+?>
+  <tr>
+  	<?php
+  	echo $r; 
+     for($c = $start; $c <= $end; $c++ ) 
+     {?>
+     <td><?php echo $r*$c ?> </td>
+	<?php 
+	 } ?>
+    </tr>
+<?php
 }
+?>
+</table>
 
+</body>
+</html>
