@@ -1,0 +1,71 @@
+/*
+   Lab 5
+   Author: Cathy Guilbaud
+   File name: lab5.css
+*/
+
+body {color: #330000;
+      margin: 0;
+      min-width: 700px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      padding-top: 0;
+      font-family: Verdana, Arial, sans-serif;
+} 
+
+body p { text-align: center;      
+}
+
+#wrapper { background-color: #ffffff;
+             min-width: 700px;
+             margin-right: auto;
+             margin-left: auto; 
+             width: 75%;
+             padding: 0;
+}
+
+
+caption{ background-color: #222222;
+		color: #ffffff;
+		font-size: 1.7em;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+}
+
+h2  { background-color: #003366;
+      color: #ffffff;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 3px 0 3px 3px;
+      margin: 0;
+      clear: left;
+}  
+
+header {border: solid 4px #003366;
+		color: #003366;
+		margin: 0;
+		padding: 0;
+		background-image: url(images/trollfaceheader.jpg);
+		background-repeat: no-repeat;
+}
+
+h1  {  text-align: center;
+      font-size: 3em;
+      padding: 10px;
+      margin: 0;
+      line-height: 150%;
+} 
+
+table { margin: auto;
+        border-spacing: 5px;
+      padding:3px 10px; 
+          text-align: center;
+}
+/*table th { padding: 3px 10px; 
+}
+*/
+p  {   text-align: center;
+}
+
+form {   text-align: center;
+}
