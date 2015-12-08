@@ -1,0 +1,281 @@
+/*
+   Final Project
+   Author: Cathy Guilbaud
+   Date: 02/27/15
+
+   File name: project.css
+*/
+
+body { background-color: #CCCCCC;
+      color: #330000;
+      margin: 0;
+      min-width: 700px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      padding-top: 0;
+      font-family: Verdana, Arial, sans-serif;
+} 
+
+#wrapper { background-color: #ffffff;
+             min-width: 700px;
+             margin-right: auto;
+             margin-left: auto; 
+             width: 75%;
+             padding: 0;
+}
+
+#rightcol {	float: right;
+			width: 180px;
+			background-color: #ffffff;
+			padding: 0px 10px;
+			font-size: .75em;
+			color: #000000;
+}
+ 
+#rightcol h3 { color: #ea3d6e;
+}
+
+#rightcol img { padding: 10px 10.5px 0 10.5px;   
+			display: block;
+			margin-left: auto;     
+			margin-right: auto;                 
+}
+
+main {	margin: 0 180px 0 0;
+		padding-top: 0;
+		padding-bottom: 10px;
+		background-color: #ffffff;
+		color: #000000;
+		display: block;
+		overflow: auto;
+		border-right: dotted 1px #003366;
+}
+
+main img { float: left;
+              padding: 10px;                            
+}
+
+main h1 { background-color: #222222;
+		color: #ffffff;
+		font-size: 1.7em;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+}
+
+main p { padding: 0 5px 10px;
+	text-align: left;
+}
+
+.music { margin-top: 0;
+		padding-top: 0;
+		margin-left: 200px;
+}
+
+main dl { padding: 0 10px;
+}
+
+.dlright {	float: right;
+			width: 30%;
+			font-size: .8em;
+}
+
+table th img {vertical-align: text-top;
+			padding: 0 10px;
+}
+
+caption{ background-color: #222222;
+		color: #ffffff;
+		font-size: 1.7em;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+}
+
+.tableright { float: right;
+			width: 30%;
+			font-size: .8em;
+}
+
+h2  { background-color: #003366;
+      color: #ffffff;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 3px 0 3px 3px;
+      margin: 0;
+      clear: left;
+}  
+
+header {border: solid 4px #003366;
+		color: #003366;
+		margin: 0;
+		padding: 0;
+		background-image: url(images/header.png);
+		background-repeat: repeat-x;
+}
+
+h1  {  text-align: center;
+      font-size: 3em;
+      padding: 10px;
+      margin: 0;
+      line-height: 150%;
+} 
+
+table {   width: 100%;
+        margin: auto;
+        border-spacing: 0;
+        padding-left: 10px;
+		margin-top: 0;
+        margin-bottom: 20px;
+}
+
+table h3 { color: #222222;
+}
+
+table p { padding-left: 0;
+      text-align: left;
+}
+
+th { padding: 5px; 
+		margin: 0;
+		font-size: 1em;
+		color: #000044;
+}
+ 
+table table th { text-align: left;
+}
+
+table table { padding-right: 5px;
+}
+
+img { border-style: none; 
+}
+
+#nav { background-color: #5cc0e9; 
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul { background-color: #5cc0e9;
+      padding: 0 15px;
+      list-style: none;
+	  margin: 0;
+}
+
+nav ul li{	float: left;
+	text-align: center;
+	line-height: 21px;
+}
+
+nav ul li a{	display: block;
+	padding: 5px;
+	color: #fff;
+	background: #5cc0e9;
+	text-decoration: none;
+}
+
+nav ul li a:hover{ color: #fff;
+	background: #ffaa00;
+}
+nav ul li ul{	display: none;
+	width: 100px;
+	padding: 0;
+	position: absolute;
+}
+
+nav ul li:hover ul{	display: block;
+}
+
+form { padding-left: 5px;
+}
+
+#mvmedia td  iframe{ padding: 15px 5px;
+			border-style: none; 
+}
+
+#kdmedia td  iframe{ padding: 15px 30px;
+			border-style: none; 
+}
+#jdmedia td  iframe{ padding: 15px 35px;
+			border-style: none; 
+}
+
+footer{ clear: right;
+		border-top: dotted 1px #003366;
+		padding-left: 10px;
+		font-size: .70em;
+		color: #ffffff;
+		font-style: italic;
+		background-color: #222222;
+}
+main ul 	{ list-style-type: none;
+}
+
+main a { color: #438CAA;
+}
+
+main p a { padding: 0;
+}
+
+main a{	padding-left: 5px;
+}
+
+main a:hover  { color: #ffaa00; 
+}
+
+main a:visited { color: #ea3d6e;
+}
+
+footer a { color: #5cc0e9;
+}
+
+footer a:hover{ color: #ffaa00;
+}
+
+footer a:visited { color: #ea3d6e;
+}
+
+@media only screen and (max-width: 1024px) {
+  body { margin: 0; }
+  #wrapper {  width: auto; } 
+  main { margin-left: 0; }
+  h1 { font-size: 200%; }
+  h2 { font-size: 100%; }
+  p { font-size: 90%; } 
+}
+
+@media only screen and (max-width: 768px) {
+  h1 { font-size: 200%; }
+  h2 { font-size: 100%; }
+  p { font-size: 90%; }
+  header { background-image: none;}
+  #rightcol {display: none; }
+  #nav { width: auto; }
+  #jdmedia td  iframe{ padding: 0; border-style: none; }
+  #kdmedia td  iframe{ padding: 0; border-style: none; }
+  #mvmedia td  iframe{ padding: 0; border-style: none; }
+  body, #wrapper{ min-width: 300px; width: auto; }
+  nav { width: auto; }
+  nav ul li { float: none; }
+  nav ul { text-align: center; }
+  nav{ display: block; width: auto; }
+  nav ul li:link ul{ display: block; }
+  nav ul li ul{ display: inline-block; width: auto; position: relative;}
+  main { margin: 0; border: none;}
+  main p { margin: 10px; width: 90%;}
+  .music { margin-left: 0;}
+  main table {padding-right: 30px; }
+  main dl { clear: left; font-size: 90%; }
+  main dt { padding-left: 10px; }
+  .dlright dd { margin: 0; padding: 0 0 0.5em 0;  }
+  .dlright ul { list-style-type: circle; }
+  table h3, table p, table table { font-size: 80%;}
+  img {display: none; }
+}
