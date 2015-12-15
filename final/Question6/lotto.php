@@ -89,7 +89,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 		}else if(isset($_POST["deleteNumber"]))
 		{
 			//var_dump($_POST["deleteNumber"]);
-			$key = $_POST["deleteNumber"];
+			$key = array_search($_POST["deleteNumber"], $_SESSION["numbers"]);
 			if(in_array($_POST["deleteNumber"], $_SESSION["numbers"]))
 				{
 				unset($_SESSION["numbers"][$key]);
